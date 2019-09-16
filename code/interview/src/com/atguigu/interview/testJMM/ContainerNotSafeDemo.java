@@ -2,6 +2,7 @@ package com.atguigu.interview.testJMM;
 
 import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.CopyOnWriteArraySet;
 
 /**
  * 集合类不安全问题
