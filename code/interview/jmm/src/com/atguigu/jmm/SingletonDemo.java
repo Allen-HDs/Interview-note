@@ -1,4 +1,4 @@
-package com.atguigu.testjmm;
+package com.atguigu.jmm;
 
 public class SingletonDemo {
     private static SingletonDemo install = null;

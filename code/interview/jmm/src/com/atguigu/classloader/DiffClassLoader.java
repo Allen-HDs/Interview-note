@@ -1,4 +1,4 @@
-package com.atguigu.testjmm;
+package com.atguigu.classloader;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,7 +26,6 @@ public class DiffClassLoader {
      * 启动类加载器加载的职责
      * @MethodName: bootClassLoaderLodingPath
      */
-
     private static void bootClassLoaderLodingPath(String loadName){
         //获取启动类加载器加载的目录
         String bootLodingPath = System.getProperty("sun.boot.class.path");

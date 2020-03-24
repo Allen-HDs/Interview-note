@@ -1,4 +1,4 @@
-package com.atguigu.testjmm;
+package com.atguigu.jmm;
 
 /**
  * @BelongProjecet: interview

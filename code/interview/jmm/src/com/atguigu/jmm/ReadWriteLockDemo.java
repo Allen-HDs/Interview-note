@@ -1,4 +1,4 @@
-package com.atguigu.testjmm;
+package com.atguigu.jmm;
 
 import java.util.HashMap;
 import java.util.Map;

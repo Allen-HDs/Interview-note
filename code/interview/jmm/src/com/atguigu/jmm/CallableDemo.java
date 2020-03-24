@@ -1,4 +1,4 @@
-package com.atguigu.testjmm;
+package com.atguigu.jmm;
 
 import java.util.concurrent.Callable;
 import java.util.concurrent.ExecutionException;
