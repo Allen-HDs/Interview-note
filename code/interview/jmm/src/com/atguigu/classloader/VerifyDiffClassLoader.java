@@ -9,7 +9,7 @@ import java.lang.reflect.Method;
  * @Author yuxiang
  * @Date 2020/3/24 18:06
  **/
-public class A {
+public class VerifyDiffClassLoader{
     public static void main(String[] args) throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
         CustomizeClassLoader customizeClassLoader1 = new CustomizeClassLoader("customizeClassLoader1");
         customizeClassLoader1.setLoadPath("F:\\ClassLoaderTest\\");

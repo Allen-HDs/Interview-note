@@ -14,8 +14,8 @@ import java.util.concurrent.atomic.AtomicReference;
  * <p>
  *
  * <p>
- * 饿汉式:线程安全、反射不安全、反序列化不安全
- * 登记式:线程安全、防止反射攻击、反序列化不安全
+ * 饿汉式:线程安全、反射不安全、反序列化不安全    利用类的加载机制来保证线程安全
+ * 登记式:线程安全、防止反射攻击、反序列化不安全   利用类的加载机制来保证线程安全
  * 枚举式:线程安全、支持序列化、防止反射攻击、反序列化安全
  * 懒汉式:线程不安全、延迟加载（两种加同步，效率低）
  * 双检锁:线程安全、volatile
@@ -27,7 +27,7 @@ import java.util.concurrent.atomic.AtomicReference;
  * @Version: V1.0
  */
 public class Singleton {
-    //懒汉式
+    //饿汉式
     private static Singleton instance = new Singleton();
 
     private Singleton() {
@@ -52,7 +52,7 @@ class Singleton1 {
 
     private Singleton1() {
         if (SingletonHolder.instance1 != null) {
-            throw new IllegalStateException();
+            throw new IllegalStateException("单例不允许多个实例");
         }
     }
 
